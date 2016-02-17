@@ -7,6 +7,46 @@
 	<title>sheila-dl</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<style>
+
+		pre {
+			overflow: auto;
+  			word-wrap: normal;
+  			white-space: pre;
+		}
+		
+		.love {
+			margin: 100px 0;
+		}
+
+		.love > small{
+			font-style: italic;
+		}
+
+		.love > small > span {
+			color: hsla(10, 50%, 50%, 1);
+			font-size: 1.5rem;
+		}
+		
+		#footer {
+			background-color: hsla(200, 10%, 75%, 1);
+		}
+
+		.red {
+			background-color: hsla(10, 50%, 75%, 0.8);
+		}
+
+		.blue {
+			background-color: hsla(200, 50%, 75%, 0.8);
+		}
+
+		.green {
+			background-color: hsla(100, 50%, 75%, 0.8);
+		}
+
+
+	</style>
 
 </head>
 <body>
@@ -30,7 +70,7 @@
 [youtube] G8KpPw303PY: Extracting video information
 [youtube] G8KpPw303PY: Downloading MPD manifest
 [info] Available formats for G8KpPw303PY:
-<span style="background-color: hsla(10, 50%, 75%, 0.8);">format code  extension  resolution note</span>
+<span class="red">format code  extension  resolution note</span>
 249          webm       audio only DASH audio   58k , opus @ 50k, 1.64MiB
 250          webm       audio only DASH audio   86k , opus @ 70k, 2.22MiB
 140          m4a        audio only DASH audio  128k , m4a_dash container, mp4a.40.2@128k (44100Hz), 3.91MiB
@@ -48,12 +88,12 @@
 136          mp4        1280x720   DASH video 2207k , avc1.4d401f, 30fps, video only, 35.32MiB
 248          webm       1920x1080  DASH video 2922k , vp9, 30fps, video only, 55.66MiB
 137          mp4        1920x1080  DASH video 4142k , avc1.640028, 30fps, video only, 65.78MiB
-<span style="background-color: hsla(200, 50%, 75%, 0.8);">36           3gp        320x?      small , mp4v.20.3,  mp4a.40.2</span>
+<span class="blue">36           3gp        320x?      small , mp4v.20.3,  mp4a.40.2</span>
 17           3gp        176x144    small , mp4v.20.3,  mp4a.40.2@ 24k
 5            flv        400x240    small , h263, mp3  @ 64k
 43           webm       640x360    medium , vp8.0,  vorbis@128k
 18           mp4        640x360    medium , avc1.42001E,  mp4a.40.2@ 96k
-<span style="background-color: hsla(100, 50%, 75%, 0.8);">22           mp4        1280x720   hd720 , avc1.64001F,  mp4a.40.2@192k <b>(best)</b></span>
+<span class="green">22           mp4        1280x720   hd720 , avc1.64001F,  mp4a.40.2@192k <b>(best)</b></span>
 PS F:\Demo Folder></pre></li>
 				
 				<li>To download a particular format, for example format code 36, the .3gp small video file, instead of <code>-F</code>, use the lowercase <code>-f</code> flag like <code>-f 36</code> after the YouTube&reg; video URL. It would look like this:
@@ -67,12 +107,12 @@ PS F:\Demo Folder></pre></li>
 	</div>
 
 
-	<div class="container-fluid" style="background-color: hsla(200, 10%, 75%, 1);">
+	<div class="container-fluid" id="footer">
 
 		<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0">
 
-			<div class="text-center" style="margin: 100px 0;">
-				<small><em>Made with <span style="color: hsla(10, 50%, 50%, 1); font-size: 1.5rem;">&hearts;</span> by <a target="_blank" href="https://github.com/braden337">Braden</a></em></small>	
+			<div class="love text-center">
+				<small>Made with <span>&hearts;</span> by <a target="_blank" href="https://github.com/braden337">Braden</a></small>	
 			</div>
 
 		</div>
